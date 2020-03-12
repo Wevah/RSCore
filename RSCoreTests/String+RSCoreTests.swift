@@ -182,4 +182,11 @@ class String_RSCore: XCTestCase {
 		}
 	}
 
+	func testFourCharCode() {
+		XCTAssertEqual("abcd".fourCharCode, 0x61626364)
+		XCTAssertEqual("ƒloc".fourCharCode, 0xC46C6F63)
+
+		XCTAssertEqual("invalid".fourCharCode, 0)
+		XCTAssertEqual("¼½¾¿".fourCharCode, 0)
+	}
 }
