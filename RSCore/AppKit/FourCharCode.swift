@@ -23,13 +23,6 @@ public extension String {
 	}
 }
 
-public extension Int {
-
-	var fourCharCode: FourCharCode {
-		return UInt32(self)
-	}
-}
-
 extension FourCharCode: ExpressibleByStringLiteral {
 
 	public typealias StringLiteralType = String
