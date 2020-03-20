@@ -141,7 +141,7 @@ public extension String {
 			s = s.appending("/")
 		}
 
-		return s
+		return s.encodedURLString ?? s
 	}
 
 	/// Removes a prefix from the beginning of a string.
